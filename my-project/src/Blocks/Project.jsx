@@ -174,7 +174,7 @@ export default function Project() {
           </p>
         </div>
         <div
-          className="relative lg:w-[50%] lg:mr-5 lg:m-0 mx-5  mt-5 overflow-y-scroll flex flex-col lg:h-[89vh] h-[65vh] gap-2"
+          className="relative lg:w-[50%] lg:mr-5 lg:m-0 mx-5 md:pt-0 pt-3 overflow-y-scroll flex flex-col lg:h-[89vh] h-[65vh] gap-2"
           ref={listRef}
         >
           {projects.map((project, index) => (
@@ -189,7 +189,7 @@ export default function Project() {
             </div>
           ))}
         </div>
-        <div className="flex lg:hidden rounded-xl md:items-end items-center mb-5 mx-5 md:p-10 p-3 lg:h-[83vh] h-[20vh] border-[1px] lg:w-[50%] border-[#E5E7EB]">
+        <div className="flex lg:hidden rounded-xl md:items-end items-center mb-3 mx-5 md:p-10 p-3 lg:h-[83vh] h-[20vh] border-[1px] lg:w-[50%] border-[#E5E7EB]">
           <p className="font-prompt md:text-3xl md:w-[60%] text-xl">
             Over the past few years, I&apos;ve worked on various projects.
             Here&apos;s few of my best:
