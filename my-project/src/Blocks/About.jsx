@@ -167,7 +167,9 @@ export default function About() {
               <p className="font-prompt text-2xl">Resume</p>
               <div className="w-[70%] bg-black h-[90%] rounded-xl flex justify-around items-center">
                 <p className=" text-white ">For More Details About My career</p>
-                <Button variant="outline">Open</Button>
+                <Link to="/resume">
+                  <Button variant="outline">Open</Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -180,12 +182,14 @@ export default function About() {
             <p className="hidden md:block text-white ">
               For More Details About My career
             </p>
-            <Button
-              variant="outline"
-              className="shadow-none md:bg-white bg-black text-white md:text-black"
-            >
-              Open
-            </Button>
+            <Link to="/resume">
+              <Button
+                variant="outline"
+                className="shadow-none md:bg-white bg-black text-white md:text-black"
+              >
+                Open
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
