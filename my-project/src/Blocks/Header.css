@@ -4,6 +4,17 @@
 .font-barcode {
   font-family: "Libre Barcode 128 Text", cursive;
 }
+html,
+body {
+  /* overflow-x: hidden; */
+  width: 100%;
+}
+
+.header-container {
+  width: 100%;
+  max-width: 100vw;
+  /* overflow-x: hidden; */
+}
 
 .font-prompt {
   font-family: "Playfair Display", sans-serif;

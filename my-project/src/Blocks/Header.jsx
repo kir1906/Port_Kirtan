@@ -14,7 +14,7 @@ export default function Header() {
   };
 
   return (
-    <div className=" z-50 fixed top-0 left-0 right-0 md:h-[115px] h-[65px] w-[100%]">
+    <div className="header-container z-50 fixed top-0 left-0 right-0 md:h-[115px] h-[65px] w-full">
       <div
         className={`mx-5 mt-5 flex justify-between items-center md:p-5 p-2 z-50 relative bg-white ${
           isMenuOpen
