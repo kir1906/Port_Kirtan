@@ -20,7 +20,7 @@ export default function ProjectCard({
 
   return (
     <div
-      className={`flex flex-col gap-5 mt-[4%] rounded-xl md:p-10 p-5 h-[93%] mb-5`}
+      className={`flex flex-col gap-5 mt-[3%] rounded-xl md:p-10 p-5 h-[95%] mb-5`}
       style={{ backgroundColor }}
     >
       <div className="md:flex hidden flex-wrap gap-3 md:w-[95%] w-full h-fit ">
