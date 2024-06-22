@@ -9,9 +9,9 @@ import { MdArrowOutward } from "react-icons/md";
 import { Link } from "react-router-dom";
 export default function About() {
   return (
-    <>
+    <div className="w-full">
       <div className="flex md:flex-row flex-col rounded-xl items-center mx-5 md:mt-[115px] mt-[85px] p-5 border-[1px] border-[#E5E7EB]">
-        <img src={ki} className="md:w-[200px] rounded-xl" />
+        <img src={ki} className="md:w-[200px] w-[96%] rounded-xl" />
         <div className="md:ml-[5%] md:p-2 pt-[15%] md:pt-0">
           <p className="text-2xl font-prompt ">About Me</p>
           <p className="lg:w-[90%] text-[#828892] mt-2">
@@ -193,6 +193,6 @@ export default function About() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
