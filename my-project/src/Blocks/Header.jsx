@@ -14,9 +14,9 @@ export default function Header() {
   };
 
   return (
-    <div className="mx-5 mt-5 z-50 fixed top-0 left-0 right-0 md:h-[80px] h-[50px]">
+    <div className=" z-50 fixed top-0 left-0 right-0 md:h-[115px] h-[65px] w-[100%]">
       <div
-        className={`w-full h-full flex justify-between items-center p-5 relative bg-white ${
+        className={`mx-5 mt-5 flex justify-between items-center md:p-5 p-2 z-50 relative bg-white ${
           isMenuOpen
             ? "rounded-t-xl border-x-[1px] border-t-[1px] border-[#E5E7EB]"
             : "border-[1px] border-[#E5E7EB] rounded-xl"
@@ -80,50 +80,52 @@ export default function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -50 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden absolute rounded-b-xl pt-3 w-full flex flex-col items-center bg-white border-x-[1px] border-b-[1px] border-[#E5E7EB] -z-10"
+            className="h-full w-full"
           >
-            <Link
-              to="/"
-              className="text-[#828892] text-lg font-light hover:text-black hover:cursor-pointer my-2"
-              onClick={toggleMenu}
-            >
-              Home
-            </Link>
-            <Link
-              to="/project"
-              className="text-[#828892] text-lg font-light hover:text-black hover:cursor-pointer my-2"
-              onClick={toggleMenu}
-            >
-              Projects
-            </Link>
-            <p
-              className="text-[#828892] text-lg font-light hover:text-black hover:cursor-pointer my-2"
-              onClick={toggleMenu}
-            >
-              Resume
-            </p>
-            <div className="flex justify-center gap-x-5 w-full my-2">
-              <a
-                href="https://github.com/kir1906"
-                target="_blank"
-                rel="noopener noreferrer"
+            <div className="md:hidden bg-white mx-5 rounded-b-xl pt-3 flex flex-col items-center border-x-[1px] border-b-[1px] border-[#E5E7EB] -z-10">
+              <Link
+                to="/"
+                className="text-[#828892] text-lg font-light hover:text-black hover:cursor-pointer my-2"
+                onClick={toggleMenu}
               >
-                <FaGithub className="text-2xl bg-[#F0F0F0] p-1 rounded-md" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/kirtan-soni1906/"
-                target="_blank"
-                rel="noopener noreferrer"
+                Home
+              </Link>
+              <Link
+                to="/project"
+                className="text-[#828892] text-lg font-light hover:text-black hover:cursor-pointer my-2"
+                onClick={toggleMenu}
               >
-                <FaLinkedin className="text-2xl bg-[#F0F0F0] p-1 rounded-md" />
-              </a>
-              <a
-                href="https://leetcode.com/u/kirtansoni1411/"
-                target="_blank"
-                rel="noopener noreferrer"
+                Projects
+              </Link>
+              <p
+                className="text-[#828892] text-lg font-light hover:text-black hover:cursor-pointer my-2"
+                onClick={toggleMenu}
               >
-                <SiLeetcode className="text-2xl bg-[#F0F0F0] p-1 rounded-md" />
-              </a>
+                Resume
+              </p>
+              <div className="flex justify-center gap-x-5 w-full my-2">
+                <a
+                  href="https://github.com/kir1906"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub className="text-2xl bg-[#F0F0F0] p-1 rounded-md" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/kirtan-soni1906/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin className="text-2xl bg-[#F0F0F0] p-1 rounded-md" />
+                </a>
+                <a
+                  href="https://leetcode.com/u/kirtansoni1411/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <SiLeetcode className="text-2xl bg-[#F0F0F0] p-1 rounded-md" />
+                </a>
+              </div>
             </div>
           </motion.div>
         )}

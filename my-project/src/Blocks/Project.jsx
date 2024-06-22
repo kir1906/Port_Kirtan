@@ -214,3 +214,59 @@ export default function Project() {
     </>
   );
 }
+
+// {isMenuOpen && (
+//   <motion.div
+//     initial={{ opacity: 0, y: -50 }}
+//     animate={{ opacity: 1, y: 0 }}
+//     exit={{ opacity: 0, y: -50 }}
+//     transition={{ duration: 0.3 }}
+//     className="md:hidden fixed top-[65px] left-[20px] rounded-b-xl bg-white  border-x-[1px] border-b-[1px] border-[#E5E7EB] -z-10"
+//   >
+//     <div className="flex flex-col items-center w-full h-full">
+//       <Link
+//         to="/"
+//         className="text-[#828892] text-lg font-light hover:text-black hover:cursor-pointer my-2"
+//         onClick={toggleMenu}
+//       >
+//         Home
+//       </Link>
+//       <Link
+//         to="/project"
+//         className="text-[#828892] text-lg font-light hover:text-black hover:cursor-pointer my-2"
+//         onClick={toggleMenu}
+//       >
+//         Projects
+//       </Link>
+//       <p
+//         className="text-[#828892] text-lg font-light hover:text-black hover:cursor-pointer my-2"
+//         onClick={toggleMenu}
+//       >
+//         Resume
+//       </p>
+//       <div className="flex justify-center gap-x-5 w-full my-2">
+//         <a
+//           href="https://github.com/kir1906"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//         >
+//           <FaGithub className="text-2xl bg-[#F0F0F0] p-1 rounded-md" />
+//         </a>
+//         <a
+//           href="https://www.linkedin.com/in/kirtan-soni1906/"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//         >
+//           <FaLinkedin className="text-2xl bg-[#F0F0F0] p-1 rounded-md" />
+//         </a>
+//         <a
+//           href="https://leetcode.com/u/kirtansoni1411/"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//         >
+//           <SiLeetcode className="text-2xl bg-[#F0F0F0] p-1 rounded-md" />
+//         </a>
+//       </div>
+//     </div>
+//   </motion.div>
+// )}
