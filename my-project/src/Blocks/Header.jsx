@@ -97,12 +97,14 @@ export default function Header() {
               >
                 Projects
               </Link>
-              <p
+              <Link
+                to="/resume"
                 className="text-[#828892] text-lg font-light hover:text-black hover:cursor-pointer my-2"
                 onClick={toggleMenu}
               >
                 Resume
-              </p>
+              </Link>
+
               <div className="flex justify-center gap-x-5 w-full my-2">
                 <a
                   href="https://github.com/kir1906"
