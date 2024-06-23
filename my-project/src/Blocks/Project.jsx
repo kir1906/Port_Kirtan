@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 import Bg1 from "../assets/Bg1.png";
 import Bg2 from "../assets/Bg2.png";
 import Bg3 from "../assets/Bg3.png";
-
+// import Bg from "../assets/Bg.jpg";
 const UpIcon = () => (
   <svg
     width="15"
@@ -42,99 +42,74 @@ const DownIcon = () => (
 export default function Project() {
   const projects = [
     {
-      skills: [
-        "React.js",
-        "Node.js",
-        "Python",
-        "PyTorch",
-        "C++",
-        "C",
-        "JavaScript",
-        "Figma",
-        "PostgreSQL",
-        "Django",
-      ],
+      skills: ["tensorFlow", "Python", "PyTorch"],
       backgroundColor: "#F2F2F2",
       description:
-        "I am a passionate individual who enjoys exploring new opportunities and learning new skills.",
-      title: "Project 1",
+        "Developed a recommendation system to rank over micro-influencers for brands. Integrated advanced fairness constraints to ensure equitable visibility among influencers.",
+      title: "Ranking Instagram Micro-Influencers for brands fairly",
       image: Bg1,
+      link: "https://github.com/kir1906/Fairness_of_Exposure.git",
     },
     {
-      skills: [
-        "React.js",
-        "Node.js",
-        "Python",
-        "PyTorch",
-        "C++",
-        "C",
-        "JavaScript",
-        "Figma",
-        "PostgreSQL",
-        "Django",
-      ],
+      skills: ["tensorFlow", "Python", "PyTorch", "Fast API"],
       backgroundColor: "#E8E8FE",
       description:
-        "This project focuses on developing a full-stack web application.",
-      title: "Project 2",
+        "Conducted EDA, preprocessing, and feature engineering on the World Cup dataset, utilized and fine-tuned regression models for optimal predictive accuracy, and deployed a predictive API using FastAPI.",
+      title: "World Cup Data Analysis and Predictive API",
       image: Bg2,
+      link: "https://github.com/kir1906/IT496_Phoneix_3.git",
     },
     {
       skills: [
         "React.js",
         "Node.js",
-        "Python",
-        "PyTorch",
-        "C++",
-        "C",
         "JavaScript",
         "Figma",
         "PostgreSQL",
-        "Django",
+        "PgAdmin",
+        "Tailwind CSS",
       ],
       backgroundColor: "#EEF3FE",
       description:
-        "A machine learning project utilizing PyTorch for deep learning.",
-      title: "Project 3",
+        "Developed an intuitive website integrated with a restaurant automation system, featuring ML-based customer feedback analysis for seamless online ordering and enhanced customer engagement.",
+      title: "Restaurant Automation",
       image: Bg3,
+      link: "https://github.com/kir1906/Automn.git",
     },
     {
-      skills: [
-        "React.js",
-        "Node.js",
-        "Python",
-        "PyTorch",
-        "C++",
-        "C",
-        "JavaScript",
-        "Figma",
-        "PostgreSQL",
-        "Django",
-      ],
+      skills: ["PostgreSQL", "Django"],
       backgroundColor: "#F3FCF7",
       description:
-        "A machine learning project utilizing PyTorch for deep learning.",
-      title: "Project 4",
+        "Designed a BCNF-compliant database with DDL scripts, created an ER diagram and relational schema, then implemented it on pgAdmin to run real-time queries for database optimization and understanding.",
+      title: "Database for e-commerce platform",
       image: Bg3,
+      link: "https://github.com/kir1906/DBMS_ecommerce.git",
+    },
+    {
+      skills: ["TensorFlow", "Python"],
+      backgroundColor: "#F1EBE2",
+      description:
+        "Developed a personalized recommendation system for places using over 13 million Google reviews, incorporating sentiment analysis to enhance recommendations.",
+      title: "Recommendation system on Google Reviews",
+      image: Bg3,
+      link: "https://github.com/kir1906/IT492_Pheonix_1.git",
     },
     {
       skills: [
         "React.js",
         "Node.js",
-        "Python",
-        "PyTorch",
-        "C++",
-        "C",
         "JavaScript",
         "Figma",
         "PostgreSQL",
-        "Django",
+        "PgAdmin",
+        "Tailwind CSS",
       ],
-      backgroundColor: "#F1EBE2",
+      backgroundColor: "#EEF3FE",
       description:
-        "A machine learning project utilizing PyTorch for deep learning.",
-      title: "Project 5",
+        "Created a watch-later list application for movies and TV shows, featuring user login and authentication for personalized tracking and secure access.",
+      title: "WatchLater List",
       image: Bg3,
+      link: "https://github.com/kir1906/WatchLater_List.git",
     },
   ];
 
@@ -168,7 +143,10 @@ export default function Project() {
   return (
     <>
       <div className="flex lg:flex-row flex-col md:mt-[85px] mt-[55px]">
-        <div className="hidden lg:flex rounded-xl items-end  mx-5 mt-7 p-10 lg:h-[83vh] md:h-[20vh] border-[1px] lg:w-[50%] border-[#E5E7EB]">
+        <div
+          className="hidden lg:flex rounded-xl items-end bg-cover mx-5 mt-7 p-10 lg:h-[83vh] md:h-[20vh] border-[1px] lg:w-[50%] border-[#E5E7EB]"
+          // style={{ backgroundImage: `url(${Bg})` }}
+        >
           <p className="font-prompt text-3xl w-[60%]">
             Over the past few years, I&apos;ve worked on various projects.
             Here&apos;s few of my best:
@@ -186,6 +164,7 @@ export default function Project() {
                 description={project.description}
                 title={project.title}
                 image={project.image}
+                link={project.link}
               />
             </div>
           ))}

@@ -15,13 +15,13 @@ export default function About() {
         <div className="md:ml-[5%] md:p-2 pt-[15%] md:pt-0">
           <p className="text-2xl font-prompt ">About Me</p>
           <p className="lg:w-[90%] text-[#828892] mt-2">
-            I am passionate individual who enjoys exploring new opportunities
-            and learning new skills. In your free time, you love engaging in
-            creative activities such as drawing, writing, or playing musical
-            instruments. In your free time, you love engaging in creative
-            activities such as drawing, writing, or playing musical instruments.
-            In your free time, you love engaging in creative activities such as
-            drawing, writing, or playing musical instruments.
+            I’m a passionate web developer and designer with a keen interest in
+            machine learning. I enjoy creating predictive models for fun,
+            blending creativity with technology. In my free time, I find joy in
+            gardening, cultivating both plants and ideas. Playing chess sharpens
+            my strategic thinking, while golf offers a relaxing yet challenging
+            outdoor pursuit. My diverse interests reflect a balanced life of
+            innovation and leisure.
           </p>
         </div>
       </div>
@@ -158,6 +158,18 @@ export default function About() {
                   className=" text-[#a5aab0] font-normal"
                 >
                   DNNs
+                </Button>
+                <Button
+                  variant="secondary"
+                  className=" text-[#a5aab0] font-normal"
+                >
+                  Tailwind CSS
+                </Button>{" "}
+                <Button
+                  variant="secondary"
+                  className=" text-[#a5aab0] font-normal"
+                >
+                  Sass
                 </Button>
               </div>
             </div>

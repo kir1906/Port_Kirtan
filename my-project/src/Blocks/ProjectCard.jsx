@@ -14,9 +14,14 @@ export default function ProjectCard({
   image,
   description,
   title,
+  link,
 }) {
   const randomImage =
     image || images[Math.floor(Math.random() * images.length)];
+
+  const handleButtonClick = () => {
+    window.open(link, "_blank");
+  };
 
   return (
     <div
@@ -37,13 +42,16 @@ export default function ProjectCard({
         ))}
       </div>
       <div>
-        <p className="font-prompt text-3xl">{title}</p>
+        <p className="font-prompt md:text-3xl text-xl">{title}</p>
       </div>
       <img src={randomImage} className="rounded-xl h-[45%]" />
       <div>
-        <p className="text-[#5a5e65]">{description}</p>
+        <p className="text-[#5a5e65] md:text-base text-xs">{description}</p>
       </div>
-      <Button className="md:w-[25%] w-[50%] gap-x-2 md:h-[8%] h-[10%] rounded-xl">
+      <Button
+        className="md:w-[25%] w-[50%] gap-x-2 md:h-[8%] h-[10%] rounded-xl"
+        onClick={handleButtonClick}
+      >
         <p>View Project</p>
         <FaArrowRightLong />
       </Button>
@@ -57,6 +65,8 @@ ProjectCard.propTypes = {
   image: PropTypes.string,
   description: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
+  // link: PropTypes.string.isRequired,
+  link: PropTypes.string,
 };
 
 ProjectCard.defaultProps = {
