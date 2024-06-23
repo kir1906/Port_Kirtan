@@ -59,7 +59,7 @@ function AnimatedRoutes() {
           <Route
             path="/project"
             element={
-              <>
+              <div className="page-container">
                 <Header />
                 <motion.div
                   initial="initial"
@@ -70,7 +70,7 @@ function AnimatedRoutes() {
                 >
                   <Project />
                 </motion.div>
-              </>
+              </div>
             }
           />
           <Route
