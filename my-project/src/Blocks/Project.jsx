@@ -42,7 +42,7 @@ const DownIcon = () => (
 export default function Project() {
   const projects = [
     {
-      skills: ["tensorFlow", "Python", "PyTorch"],
+      skills: ["tensorFlow", "Python", "PyTorch", "NN"],
       backgroundColor: "#F2F2F2",
       description:
         "Developed a recommendation system to rank over micro-influencers for brands. Integrated advanced fairness constraints to ensure equitable visibility among influencers.",
@@ -51,7 +51,7 @@ export default function Project() {
       link: "https://github.com/kir1906/Fairness_of_Exposure.git",
     },
     {
-      skills: ["tensorFlow", "Python", "PyTorch", "Fast API"],
+      skills: ["tensorFlow", "Python", "PyTorch", "Fast API", "NN"],
       backgroundColor: "#E8E8FE",
       description:
         "Conducted EDA, preprocessing, and feature engineering on the World Cup dataset, utilized and fine-tuned regression models for optimal predictive accuracy, and deployed a predictive API using FastAPI.",
@@ -73,7 +73,7 @@ export default function Project() {
       description:
         "Developed an intuitive website integrated with a restaurant automation system, featuring ML-based customer feedback analysis for seamless online ordering and enhanced customer engagement.",
       title: "Restaurant Automation",
-      image: Bg3,
+      image: Bg1,
       link: "https://github.com/kir1906/Automn.git",
     },
     {
@@ -86,12 +86,12 @@ export default function Project() {
       link: "https://github.com/kir1906/DBMS_ecommerce.git",
     },
     {
-      skills: ["TensorFlow", "Python"],
+      skills: ["TensorFlow", "Python", "NN"],
       backgroundColor: "#F1EBE2",
       description:
         "Developed a personalized recommendation system for places using over 13 million Google reviews, incorporating sentiment analysis to enhance recommendations.",
       title: "Recommendation system on Google Reviews",
-      image: Bg3,
+      image: Bg1,
       link: "https://github.com/kir1906/IT492_Pheonix_1.git",
     },
     {
@@ -108,8 +108,26 @@ export default function Project() {
       description:
         "Created a watch-later list application for movies and TV shows, featuring user login and authentication for personalized tracking and secure access.",
       title: "WatchLater List",
-      image: Bg3,
+      image: Bg2,
       link: "https://github.com/kir1906/WatchLater_List.git",
+    },
+    {
+      skills: ["TensorFlow", "Python", "NN"],
+      backgroundColor: "#F1EBE2",
+      description:
+        "This project involves EDA, preprocessing, and transformation of the Smoking and Drinking dataset, followed by hyperparameter tuning and classification model selection, including Logistic Regression, Decision Tree, KNN, NN, Random Forest, and CatBoost.",
+      title: "Smoking and Drinking Dataset Analysis and Classification",
+      image: Bg1,
+      link: "https://github.com/kir1906/IT496_Phoneix_2.git",
+    },
+    {
+      skills: ["TensorFlow", "Python", "NN", "KNN"],
+      backgroundColor: "#E8E8FE",
+      description:
+        "This project utilizes the MovieLens20 dataset for collaborative filtering-based movie recommendations, leveraging K-nearest neighbors and matrix factorization techniques to enhance user experience through personalized suggestions.",
+      title: "MovieLens20 Dataset Analysis and Recommender System",
+      image: Bg1,
+      link: "https://github.com/kir1906/IT496_Phoneix_2.git",
     },
   ];
 

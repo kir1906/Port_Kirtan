@@ -46,13 +46,14 @@ export default function About() {
                       Python
                     </div>
                   </div>
-                  <div className="text-2xl text-neutral-50 mt-5">
-                    Project Name
+                  <div className="md:text-2xl text-xl text-neutral-50 mt-5">
+                    Ranking Instagram Influencers
                   </div>
                   <div className="md:text-lg text-base  text-[#a5aab0] mt-1">
-                    Description of the project in 2 to 3 lines I am passionate
-                    individual who enjoys exploring new opportunities and
-                    learning new skills.
+                    Developed a recommendation system to rank over
+                    micro-influencers for brands. Integrated advanced fairness
+                    constraints to ensure equitable visibility among
+                    influencers.
                   </div>
                 </div>
                 <div className="flex justify-end">
